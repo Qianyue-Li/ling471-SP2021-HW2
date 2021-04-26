@@ -81,7 +81,10 @@ def countTokens(text):
     # the word is stored as a key, we will increment the count by 1.
 
     # TODO: Write a for loop here, doing what is described above.
-
+    for word in tokens:
+        if word not in token_counts:
+            token_counts[word] = 0
+        token_counts[word] += 1
     # Do not forget to return the result!
     return token_counts
 
